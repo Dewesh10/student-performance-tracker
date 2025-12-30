@@ -30,3 +30,19 @@ MongoDB database, and interactive visualization.
 - POST /students
 - PUT /students/{id}
 - DELETE /students/{id}
+
+## How to Run This Project
+
+1. Clone the repository or download ZIP
+2. Ensure MongoDB is running locally
+3. Install dependencies:
+   pip install fastapi uvicorn pymongo dash pandas plotly requests
+4. Load sample data:
+   python load_csv.py
+5. Start backend server:
+   uvicorn main:app --reload
+6. Start dashboard (new terminal):
+   python dashboard.py
+
+Backend: http://127.0.0.1:8000/docs  
+Dashboard: http://127.0.0.1:8050
